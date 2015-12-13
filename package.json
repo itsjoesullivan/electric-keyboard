@@ -1,0 +1,21 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js -o bundle.js   -t [ babelify --presets [ es2015 ] ]",
+    "watch": "watchify main.js -o bundle.js   -t [ babelify --presets [ es2015 ] ]"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adsr": "^1.0.0",
+    "babelify": "^7.2.0",
+    "friendly-midi": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
